@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main#main-bg {
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+}
+
+img#bg {
+    width: 140vw;
+    opacity: 0;
+}
