@@ -4,8 +4,41 @@
 }
 
 html, body {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
     max-width: 100%;
     overflow-x: hidden;
+    display: flex;
+}
+
+header.netflix {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    /* background: black; */
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5) 0,rgba(0,0,0,0) 100%);
+    z-index: 1;
+}
+
+div#logo-da-netflix {
+    height: 45px;
+    width: 167px;
+    vertical-align: middle;
+    padding: 3vh 0 0 3vw;
+}
+
+.svg-icon {
+    vertical-align: middle;
+    fill: rgb(229, 9, 20);
+    display: inline-block;
+    line-height: 90px;
+    text-decoration: none;
+}
+
+g#netflix-logo {
+    width: 50%;
 }
 
 main#main-bg {
@@ -13,11 +46,210 @@ main#main-bg {
     overflow-x: hidden;
     box-sizing: border-box;
     background-color: black;
-}
-
+    position: absolute;
+    height: 163.5vh;
 }
 
 img#bg {
-    width: 140vw;
-    opacity: 0;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0.5;
+}
+
+.caixa-login {
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 68px 40px;
+    left: 0;
+    right: 0;
+    width: 314px;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75%;
+    /* box-sizing: border-box; */
+}
+
+h1 {
+    margin-bottom: 28px;
+}
+
+div.principal {
+    height: 343px;
+}
+
+div.dados {
+    width: 100%;
+}
+
+div.dados input {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 16px 20px 0;
+    background-color: #333;
+    margin-bottom: 16px;
+}
+
+div.dados input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #8c8c8c;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    position: relative;
+    top: -5px;
+
+}
+
+button#entrar {
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0 12px;
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    background: #e50914;
+    color: white;
+    border: none;
+}
+
+label[for=remember] {
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+a#help {
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 500;
+    float: right;
+    text-decoration: none;
+}
+
+a#help:hover {
+    text-decoration: underline;
+}
+
+div.detalhes div.fb-login {
+    height: 36px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+div.detalhes div.fb-login img {
+    width: 20px;
+    height: 20px;
+}
+
+div.detalhes div.fb-login span.fbtxt {
+    color: #737373;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+div.detalhes div.novo-aqui {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+div.detalhes div.novo-aqui a {
+    text-decoration: none;
+    color: white;
+}
+
+div.detalhes div.novo-aqui a:hover {
+    text-decoration: underline;
+}
+
+div.detalhes div.recaptcha {
+    font-size: 13px;
+    color: #8c8c8c;
+    margin-top: 14px;
+}
+
+div.detalhes div.recaptcha a {
+    background-color: transparent;
+    border: none;
+    color: #0071eb;
+    cursor: pointer;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+}
+
+footer.footer {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 99;
+    position: absolute;
+    margin-top: 127.5vh;
+    height: 236px;
+    box-sizing: border-box;
+}
+
+footer div{
+    max-width: 1000px;
+    min-height: 190px;
+    margin: 0px auto;
+    padding: 15px 19px;
+    background-color: rgba(0, 0, 0, 0.0);
+    box-sizing: border-box;
+
+}
+
+h2{
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.0);
+    margin-bottom: 30px;
+}
+
+ul{
+    color: #757575;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.0);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+select{
+    margin-top: 30px;
+    background-image: url(img/word.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    background-color: rgba(0, 0, 0, 0.75);
+    min-height: 50px;
+    min-width: 145px;
+    color: #757575;   
+    padding: 15px 24px;
+    border: 1px solid #757575;
+    text-transform: none;
+}
+
+option{
+    background-color: black;
+    color: #757575;
 }
