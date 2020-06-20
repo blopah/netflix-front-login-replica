@@ -26,7 +26,7 @@ div#logo-da-netflix {
     height: 45px;
     width: 167px;
     vertical-align: middle;
-    padding: 3vh 0 0 3vw;
+    padding: 3% 0 0 4%;
 }
 
 .svg-icon {
@@ -42,15 +42,16 @@ g#netflix-logo {
 }
 
 main#main-bg {
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100%;
+    overflow: hidden;
     box-sizing: border-box;
     background-color: black;
     position: absolute;
-    height: 163.5vh;
+    height: 1076px;
 }
 
 img#bg {
+    position: absolute;
     min-height: 100%;
     min-width: 100%;
     opacity: 0.5;
@@ -64,7 +65,7 @@ img#bg {
     left: 0;
     right: 0;
     width: 314px;
-    height: 85vh;
+    height: 559px;
     background-color: rgba(0, 0, 0, 0.75);
     position: absolute;
     z-index: 9;
@@ -194,10 +195,11 @@ div.detalhes div.recaptcha a {
 
 footer.footer {
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0  , 0.75);
     z-index: 99;
     position: absolute;
     margin-top: 127.5vh;
+    bottom: 0px;
     height: 236px;
     box-sizing: border-box;
 }
