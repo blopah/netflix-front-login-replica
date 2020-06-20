@@ -255,3 +255,28 @@ option{
     background-color: black;
     color: #757575;
 }
+
+@media (max-width: 740px) {
+    .caixa-login {
+        margin: 0 auto;
+        padding: 60px 0px 40px;
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    img#bg {
+        opacity: 0;
+    }
+
+    div#logo-da-netflix {
+        width: 76px;
+    }
+
+    main#main-bg {
+        height: 835px;
+    }
+
+    footer.footer {
+        border-top: 1px solid #737373;
+    }
+}
